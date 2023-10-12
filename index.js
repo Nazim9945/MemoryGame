@@ -74,7 +74,7 @@ function checkformatch() {
     cardsimg[setid[0]].setAttribute("src", "images/blank.png");
   }
 
-  if (matchArray[0] === matchArray[1]) {
+  else if (matchArray[0] === matchArray[1]) {
     cardsimg[setid[0]].setAttribute("src", "images/white.png");
     cardsimg[setid[1]].setAttribute("src", "images/white.png");
     cardsimg[setid[0]].removeEventListener("click", flipcard);
